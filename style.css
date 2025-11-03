@@ -72,7 +72,9 @@ nav a {
 }
 
 
-
+/* ==========================
+   Hero Section - Index
+   ========================== */
 .hero {
     background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
@@ -119,19 +121,22 @@ nav a {
     margin-bottom: 2rem;
 }
 
-.cta-buttons{
+
+
+.cta-buttons {
     display: flex;
-    flex-direction: row;/*lado a lado*/
-    gap: 1.5rem; /* espaços entre os botões*/
-    justify-content: center;/* centralizados os horizontes*/
+    flex-direction: row; /* lado a lado */
+    gap: 1.5rem; /* espaço entre os botões */
+    justify-content: center; /* centraliza horizontalmente */
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* quebra em telas pequenas */
     margin-top: 2rem;
 }
 
-.btn-primary, .btn-secondary{
-    flex: 1 1 200px;
-    max-width: 250px;
+
+.btn-primary, .btn-secondary {
+    flex: 1 1 200px; 
+    max-width: 250px; 
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
     font-weight: bold;
@@ -139,125 +144,103 @@ nav a {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-.btn-primary{
+
+.btn-primary {
     background: #667eea;
     color: white;
 }
-.btn-secondary{
+
+
+.btn-secondary {
     background: #764ba2;
     color: white;
 }
 
-.btn-primary:hover, .btn-secondary:hover{
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0, 0, 0.3);
 
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-.btn-primary::after, .btn-secondary::after{
+
+
+.btn-primary::after, .btn-secondary::after {
     content: '';
     position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 200px;
-    height: 200px;
-    background: rgba(255,255,255, 0.15);
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.15);
     transform: rotate(45deg);
-    transition: all 0.5 ease;
-}
-.btn-primary:hover::after, .btn-secondary:hover::after{
-    top:-20px;
-    left: -20px;
-
+    transition: all 0.5s ease;
 }
 
-form fieldset{
+
+.btn-primary:hover::after, .btn-secondary:hover::after {
+    top: -20%;
+    left: -20%;
+}
+
+
+
+form fieldset {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
-form legend{
+
+
+form legend {
     font-weight: bold;
     padding: 0 0.5rem;
 }
-form-group{
-    margin-bottom: 1rem;
 
+
+.form-group {
+    margin-bottom: 1rem;
 }
-.form-label{
+
+
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
+
+
 .form-group input,
 .form-group select,
-.form-group textarea{
+.form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
 }
-.sucess-message{
-    display: none;
-    margin-top: 1rem;
-    color:green;
+
+
+.success-message {
+    display: none; 
+    margin-bottom: 1rem;
+    color: green;
     font-weight: bold;
     text-align: center;
 }
 
-footer{
+
+footer {
     text-align: center;
     padding: 2rem;
-    background: white;
-    margin-top: -3px;
+    background: #f5f5f5;
+    margin-top: 3rem;
 }
-
-#tabelaVoluntarios table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    font-family: 'Segoi UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#tabelaVoluntarios th,
-#tabelaVoluntarios td{
-    padding: 0.75rem 1rem;
-    border: 1px solid #ccc;
-    text-align: center; 
-
-}
-#tabelaVoluntarios th{
-    background-color: #667eea;
-    color: white;
-    font-family: 600;
-}
-#tabelaVoluntarios tr:nth-child(even){
-    background-color: #f9f9f9;
-}
-#tabelaVoluntarios tr:hover{
-    background-color: #e0e0ff;
-}
-#tabelaVoluntarios table{
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0, 1);
-}
-#tabelaVoluntarios p{
-    text-align: center;
-    font-weight: 500;
-    color: #333;
-    padding: 1rem;
-
-} 
-
-
-
 
 
 
